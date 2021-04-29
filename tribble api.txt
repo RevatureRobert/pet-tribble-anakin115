@@ -1,0 +1,33 @@
+http://localhost:8080/pet-tribble-anakin115/lab
+
+	GET
+	
+	POST
+	{
+    		"labName"="STRING"
+ 	}
+
+	DELETE
+	/lab?labId=INTEGER
+
+	UPDATE
+	/lab?labId=INTEGER&labName=STRING
+	
+
+http://localhost:8080/pet-tribble-anakin115/tribble
+
+	
+	GET
+	
+	POST
+	{
+    		"name"="STRING",
+		"age"= INTEGER,
+		"size" = INTEGER
+ 	}
+
+	DELETE
+	/tribble?tribbleId=INTEGER
+
+	UPDATE
+	/tribble?tribbleId=INTEGER&labId=INTEGER
