@@ -1,0 +1,24 @@
+
+create table tribble (
+tribble_id SERIAL,
+name text,
+age int,
+size int,
+lab_id int references lab ON DELETE CASCADE,
+
+primary key (tribble_id)
+)
+
+create table lab (
+lab_id SERIAL,
+lab_name text,
+primary key (lab_id)
+)
+
+INSERT INTO lab (lab_name) VALUES ('Unlucky');
+
+select * from lab
+
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA tribble TO caradmin;
+
+INSERT INTO tribble (name,age,size) VALUES ('t2',12,55);
